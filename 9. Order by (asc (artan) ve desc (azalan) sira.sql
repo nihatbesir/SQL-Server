@@ -1,10 +1,8 @@
---artan sıra
-select * from Ogrenci order by OgrenciNo asc
+--Bu SQL sorğuları `ORDER BY` operatorundan istifadə edərək `Ogrenci` cədvəlindəki məlumatların artan (`ASC`) 
+  --və ya azalan (`DESC`) sıra ilə çeşidlənməsini həyata keçirir:
 
---azalan sıra
-select * from Ogrenci order by OgrenciNo desc 
-
---Əlavə Nümunələr
-select *from Ogrenci order by ErkekMi, Ad 
-select *from Ogrenci order by ErkekMi, Ad desc --qız olan tələbələrin adının azalan sıra ilə (z-A)
-select *from Ogrenci order by ErkekMi desc, Ad desc --kişi olan tələbələrin adlarının azalan sıra ilə tapılması (Z-a)
+ORDER BY OgrenciNo asc — Tələbələri nömrələrinə görə artan sıra ilə (kiçikdən böyüyə) sıralayır.
+ORDER BY OgrenciNo desc — Tələbələri nömrələrinə görə azalan sıra ilə (böyükdən kiçiyə) sıralayır.
+ORDER BY ErkekMi, Ad — Əvvəlcə cinsiyyətə (`ErkekMi`), daha sonra isə adlara görə artan sıra ilə sıralayır.
+ORDER BY ErkekMi, Ad desc — Cinsiyyətə görə artan, adlara görə isə azalan sıra ilə (Z-dən A-ya) sıralayır.
+ORDER BY ErkekMi desc, Ad desc — Həm cinsiyyət, həm də ad sütunları üzrə azalan sıra ilə çeşidləmə aparır.
