@@ -1,4 +1,4 @@
-Bu SQL əmrləri `Ogrenci` cədvəlindən müəyyən şərtlərə uyğun gələn qeydləri silir:
+--Bu SQL əmrləri `Ogrenci` cədvəlindən müəyyən şərtlərə uyğun gələn qeydləri silir:
 
 DELETE from Ogrenci WHERE OgrenciNo=981 and Ad='Ebru'  — Tələbə nömrəsi 981 və adı Ebru olan konkret qeydi silir.
 DELETE from Ogrenci WHERE ErkekMi=0  — Cinsiyyəti qız (`ErkekMi = 0`) olan bütün tələbələri cədvəldən silir.
