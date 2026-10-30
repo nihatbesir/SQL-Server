@@ -1,0 +1,10 @@
+Primary Key (Birincil Açar) – verilənlər bazasındakı (database) hər bir sətri (qeydi) unikal
+(təkrarolunmaz) və birmənalı şəkildə müəyyən edən sütun və ya sütunlar kombinasiyasıdır.
+
+Sadə desək, bir cədvəldəki hər hansı bir məlumatı 
+(məsələn, tələbə və ya işçi siyahısındakı hər hansı şəxsi) heç vaxt səhv salmadan dəqiq tapmaq üçün istifadə olunan əsas "şəxsiyyət vəsiqəsi" nömrəsidir.
+
+Əsas xüsusiyyətləri:
+Unikal olmalıdır: Heç vaxt təkrar oluna bilməz (məsələn, iki fərqli tələbənin eyni ID nömrəsi ola bilməz).
+
+Boş (NULL) ola bilməz: Hər bir sətrin mütləq Primary Key dəyəri olmalıdır.
