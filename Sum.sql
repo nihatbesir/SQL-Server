@@ -1,0 +1,1 @@
+select sum(SinavNotu2) from Ogrenci
