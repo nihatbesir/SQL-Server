@@ -1,3 +1,6 @@
+--Bu SQL ifadəsi `Ogrenci` adlı yeni bir cədvəl yaradır və həmin cədvəldə
+--tələbə nömrəsi, ad, soyad, TC kimlik nömrəsi, qeydiyyat tarixi və cinsiyyət məlumatlarını saxlamaq üçün müvafiq sütunları və məlumat tiplərini təyin edir.
+
 CREATE TABLE Ogrenci (
 OgrenciNo int NOT NULL,
 Ad varchar(30) NOT NULL,
