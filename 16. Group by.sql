@@ -1,8 +1,13 @@
 --Bu üç SQL sorğusu məlumatların `GROUP BY` vasitəsilə addım-addım daha detallı hesabat halına gətirilməsini və zənginləşdirilməsini göstərir:
 
-select ErkekMi, count(*) from Ogrenci group by ErkekMi — Tələbələri `ErkekMi` sütununa (cinsiyyətə) görə qruplaşdırır və hər qrupdakı tələbə sayını hesablayır. Nəticə cədvəlində say sütununun xüsusi başlığı olmur.
-select ErkekMi, count(*) as 'Ogrenci Sayisi' from Ogrenci group by ErkekMi — Əvvəlki sorğu ilə eyni işi görür, lakin `AS` (alias) açar sözündən istifadə edərək say sütununa səliqəli və oxunaqlı **`Ogrenci Sayisi`** başlığını verir.
-select ErkekMi, count(*) as 'Ogrenci Sayisi' , avg(SinavNotu1) as 'Sinav ortalamasi' from Ogrenci group by ErkekMi — Qruplaşdırmanı bir addım da irəli apararaq həm tələbə sayını, həm də hər qrup üzrə 1-ci imtahanın orta qiymətini (`AVG`) eyni cədvəldə birləşdirir.
+select ErkekMi, count(*) from Ogrenci group by ErkekMi 
+-- Tələbələri `ErkekMi` sütununa (cinsiyyətə) görə qruplaşdırır və hər qrupdakı tələbə sayını hesablayır. Nəticə cədvəlində say sütununun xüsusi başlığı olmur.
+
+select ErkekMi, count(*) as 'Ogrenci Sayisi' from Ogrenci group by ErkekMi
+-- Əvvəlki sorğu ilə eyni işi görür, lakin `AS` (alias) açar sözündən istifadə edərək say sütununa səliqəli və oxunaqlı **`Ogrenci Sayisi`** başlığını verir.
+      
+select ErkekMi, count(*) as 'Ogrenci Sayisi' , avg(SinavNotu1) as 'Sinav ortalamasi' from Ogrenci group by ErkekMi 
+--Qruplaşdırmanı bir addım da irəli apararaq həm tələbə sayını, həm də hər qrup üzrə 1-ci imtahanın orta qiymətini (`AVG`) eyni cədvəldə birləşdirir.
 -----------------------------------------------------------
       select ErkekMi, count(*) as 'Ogrenci Sayisi',
       avg(SinavNotu1) as 'Sinav 1 ortalamasi ',
