@@ -1,3 +1,10 @@
+AVG() Syntax
+  
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+---------------------
 select Avg(SinavNotu2) from Ogrenci — SinavNotu2 sütunundakı qiymətlərin ədədi ortasını (ortalama balı) hesablayır.
 
 Select avg(FinalNotu) from Ogrenci — Bütün tələbələrin FinalNotu üzrə ortalama balını hesablayır.
