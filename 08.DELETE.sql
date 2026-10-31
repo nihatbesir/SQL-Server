@@ -1,3 +1,7 @@
+Syntax
+  DELETE FROM table_name WHERE condition;
+-------------------------------------------
+
 --Bu SQL əmrləri `Ogrenci` cədvəlindən müəyyən şərtlərə uyğun gələn qeydləri silir:
 
 DELETE from Ogrenci WHERE OgrenciNo=981 and Ad='Ebru'  — Tələbə nömrəsi 981 və adı Ebru olan konkret qeydi silir.
