@@ -1,3 +1,12 @@
+GROUP BY Syntax
+      
+SELECT column1, aggregate_function(column2), column3, ...
+FROM table_name
+WHERE condition
+GROUP BY column1, column3
+ORDER BY column_name;
+
+---------------------
 --Bu üç SQL sorğusu məlumatların `GROUP BY` vasitəsilə addım-addım daha detallı hesabat halına gətirilməsini və zənginləşdirilməsini göstərir:
 
 select ErkekMi, count(*) from Ogrenci group by ErkekMi 
