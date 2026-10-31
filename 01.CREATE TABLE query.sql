@@ -1,11 +1,11 @@
 CREATE TABLE — SQL-də verilənlər bazasında yeni bir cədvəl (table) yaratmaq üçün istifadə olunan DDL (Data Definition Language) əmridir.
 
 Əsas Sintaksisi:
-SQL
-CREATE TABLE CedvelAdi (
-    Sutun1_Adi MelumatNovu Məhdudiyyət,
-    Sutun2_Adi MelumatNovu Məhdudiyyət,
-    ...
+CREATE TABLE table_name (
+  column1 datatype constraint,
+  column2 datatype constraint,
+  column3 datatype constraint,
+  ....
 );
 ---------------
 Nümünə ilə izah
