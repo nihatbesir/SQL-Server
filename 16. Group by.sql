@@ -7,6 +7,7 @@ GROUP BY column1, column3
 ORDER BY column_name;
 
 ---------------------
+Nümunələr ilə izah
 --Bu üç SQL sorğusu məlumatların `GROUP BY` vasitəsilə addım-addım daha detallı hesabat halına gətirilməsini və zənginləşdirilməsini göstərir:
 
 select ErkekMi, count(*) from Ogrenci group by ErkekMi 
