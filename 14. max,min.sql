@@ -1,3 +1,16 @@
+MAX() Syntax
+  
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+----------------------
+MIN() Syntax
+  
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+----------------------
 --Bu SQL sorğuları `Ogrenci` cədvəlindəki 2-ci imtahan ballarının ən yüksək və ən aşağı qiymətlərini tapır:
 
 select max(SinavNotu2) from Ogrenci  — 2-ci imtahan balları içərisindəki ən yüksək (maksimum) balı tapır.
