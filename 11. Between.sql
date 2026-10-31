@@ -4,6 +4,7 @@ FROM table_name
 WHERE column_name BETWEEN value1 AND value2;
 
 -------------------------
+Nümunələr ilə izah
 --Bu SQL sorğusu `Ogrenci` cədvəlindən tələbə nömrəsi 400 ilə 800 arasında olan (400 və 800 daxil olmaqla)bütün tələbələrin məlumatlarını seçib siyahılayır.
 select * from Ogrenci where OgrenciNo between 400 and 800
 
