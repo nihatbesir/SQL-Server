@@ -1,4 +1,11 @@
-INNER JOIN (Daxili Birləşdirmə):
+INNER JOIN Syntax
+  
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+
+--------------------INNER JOIN (Daxili Birləşdirmə):
 iki və ya daha çox cədvəldəki məlumatları aralarındakı ortaq (eyni) dəyərlərə əsasən birləşdirmək üçün istifadə olunan SQL əməliyyatıdır.
 
 Əsas Xüsusiyyətləri:
