@@ -19,6 +19,7 @@ INSERT INTO table_name
 VALUES (value1, value2, value3, ...);
 
 --------------------------------------
+Nümunələr ilə izah
 --Bu SQL sorğuları `Ogrenci` cədvəlinə yeni tələbə qeydləri əlavə etməyin iki fərqli üsulunu göstərir:
 --birinci üsulda bütün sütunlar üçün dəyərlər ardıcıl şəkildə yazılır,
 --ikinci üsulda isə yalnız xüsusi olaraq göstərilən sütunlar üçün məlumatlar daxil edilir.
