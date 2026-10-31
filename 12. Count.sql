@@ -1,3 +1,10 @@
+COUNT() Syntax
+  
+SELECT COUNT([DISTINCT] column_name | *)
+FROM table_name
+WHERE condition;
+
+----------------------
 --Bu SQL sorğuları `COUNT()` aqreqat funksiyasından istifadə edərək `Ogrenci` cədvəlindəki qeydlərin sayını müxtəlif şərtlərə əsasən hesablayır:
 
 select count(*) from Ogrenci — Cədvəldəki ümumi sətir (tələbə) sayını qaytarır.
