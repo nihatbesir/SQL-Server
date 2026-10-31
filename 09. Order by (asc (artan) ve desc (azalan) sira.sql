@@ -1,3 +1,8 @@
+Syntax
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+-----------------------------------
 --Bu SQL sorğuları `ORDER BY` operatorundan istifadə edərək `Ogrenci` cədvəlindəki məlumatların artan (`ASC`) 
   --və ya azalan (`DESC`) sıra ilə çeşidlənməsini həyata keçirir:
 
