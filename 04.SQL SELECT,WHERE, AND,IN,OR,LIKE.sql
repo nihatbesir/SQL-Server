@@ -16,7 +16,8 @@ IN: Bir sütunun bir neçə dəqiq dəyərdən (məsələn: 'Bakı', 'Sumqayıt'
 
 LIKE: Mətn içərisində müəyyən bir axtarış pattern-inə (şablonuna) uyğunluğunu yoxlayır (məsələn, müəyyən hərflə başlayan sözlər). % simvolu ilə birlikdə istifadə olunur.
 -------------------------------------------------------
-Bu SQL sorğuları `Ogrenci` cədvəli üzərində müxtəlif şərtlərlə (`WHERE`, `LIKE`, `IN`, `AND`, `OR`) məlumatların seçilməsi və filtrlənməsini həyata keçirir:
+Nümunələr ilə izah
+  Bu SQL sorğuları `Ogrenci` cədvəli üzərində müxtəlif şərtlərlə (`WHERE`, `LIKE`, `IN`, `AND`, `OR`) məlumatların seçilməsi və filtrlənməsini həyata keçirir:
 
 SELECT * FROM Ogrenci — Cədvəldəki bütün sütunları və sətirləri gətirir.
 SELECT Ad,Soyad,ErkekMi FROM Ogrenci — Tələbələrin yalnız ad, soyad və cinsiyyət məlumatlarını seçir.
