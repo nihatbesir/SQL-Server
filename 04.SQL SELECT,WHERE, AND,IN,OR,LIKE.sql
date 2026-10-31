@@ -1,3 +1,21 @@
+SELECT, WHERE, AND, IN, OR və LIKE —
+verilənlər bazasından istədiyimiz şərtlərə uyğun məlumatları seçmək və filtrləmək üçün istifadə olunan əsas açar sözlərdir.
+
+Aşağıda bu əmrlərin qısa izahı və onların birgə istifadə olunduğu real nümunə verilmişdir:
+
+Əsas Anlayışlar:
+SELECT: Cədvəldən hansı sütunların gətiriləcəyini təyin edir.
+
+WHERE: Məlumatları müəyyən bir şərtə görə filtrləyir (süzgəcdən keçirir).
+
+AND: Birdən çox şərtin hamısının eyni anda ödənməsini tələb edir (və).
+
+OR: Şərtlərdən hər hansı birinin ödənməsinin kifayət olduğunu bildirir (və ya).
+
+IN: Bir sütunun bir neçə dəqiq dəyərdən (məsələn: 'Bakı', 'Sumqayıt', 'Gəncə') hər hansı birinə bərabər olmasını yoxlayır. (OR əmrinin daha qısa formasıdır).
+
+LIKE: Mətn içərisində müəyyən bir axtarış pattern-inə (şablonuna) uyğunluğunu yoxlayır (məsələn, müəyyən hərflə başlayan sözlər). % simvolu ilə birlikdə istifadə olunur.
+-------------------------------------------------------
 Bu SQL sorğuları `Ogrenci` cədvəli üzərində müxtəlif şərtlərlə (`WHERE`, `LIKE`, `IN`, `AND`, `OR`) məlumatların seçilməsi və filtrlənməsini həyata keçirir:
 
 SELECT * FROM Ogrenci — Cədvəldəki bütün sütunları və sətirləri gətirir.
