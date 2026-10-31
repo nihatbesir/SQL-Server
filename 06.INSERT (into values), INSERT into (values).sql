@@ -4,9 +4,19 @@ INSERT INTO — verilənlər bazasındakı cədvəle yeni sətir (məlumat) əla
 Əgər cədvəldəki bütün sütunlara ardıcıllıqla dəyər daxil edəcəksinizsə,sütun adlarını qeyd etmək məcburi deyil
 (lakin cədvəl strukturu dəyişərsə səhv verə biləcəyi üçün sütun adlarını yazmaq həmişə daha təhlükəsizdir).
 ----------------
-SQL
-INSERT INTO CedvelAdi 
-VALUES (Değer1, Değer2, Değer3, ...);
+Syntax 1
+Specify both the column names and the values to be inserted:
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+Syntax 2
+If you insert values for ALL the columns of the table, you can omit the column names.
+
+However, the order of the values must be in the same order as the columns in the table:
+
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
 
 --------------------------------------
 --Bu SQL sorğuları `Ogrenci` cədvəlinə yeni tələbə qeydləri əlavə etməyin iki fərqli üsulunu göstərir:
