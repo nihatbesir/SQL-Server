@@ -16,23 +16,23 @@ select A.OgrenciNo, A.Ad, A.Soyad, A.KayitTarihi, B.AdresDetay, B.Sehir from Ogr
        right join OgrenciAdres B
        on A.OgrenciNo = B.OgrenciNo
 
-İzahı: Sağ cədvəldəki (OgrenciAdres) bütün ünvanları və sol cədvəldən (Ogrenci) 
-ona uyğun gələn tələbələri gətirir. Əgər hər hansı ünvanın qarşılığında tələbə yoxdursa, tələbə məlumatları yerində NULL yazılır.
+--İzahı: Sağ cədvəldəki (OgrenciAdres) bütün ünvanları və sol cədvəldən (Ogrenci) 
+--ona uyğun gələn tələbələri gətirir. Əgər hər hansı ünvanın qarşılığında tələbə yoxdursa, tələbə məlumatları yerində NULL yazılır.
 -----------------------------------
 select A.OgrenciNo, B.OgrenciNo ,A.Ad, A.Soyad, A.KayitTarihi, B.AdresDetay, B.Sehir from Ogrenci A
        right join OgrenciAdres B
        on A.OgrenciNo = B.OgrenciNo
 
-İzahı: Birinci sorğu ilə eynidir, lakin fərq olaraq həm A.OgrenciNo,
-həm də B.OgrenciNo seçilib. Bu, nəticə cədvəlində hansı tərəfdə uyğunluq olub-olmadığını (NULL olub-olmadığını) əyani şəkildə görmək üçündür.
+--İzahı: Birinci sorğu ilə eynidir, lakin fərq olaraq həm A.OgrenciNo,
+--həm də B.OgrenciNo seçilib. Bu, nəticə cədvəlində hansı tərəfdə uyğunluq olub-olmadığını (NULL olub-olmadığını) əyani şəkildə görmək üçündür.
 -----------------------------------
 select A.OgrenciNo, B.OgrenciNo ,A.Ad, A.Soyad, A.KayitTarihi, B.AdresDetay, B.Sehir from Ogrenci A
        right join OgrenciAdres B
        on A.OgrenciNo = B.OgrenciNo
       where A.OgrenciNo is null
 
-İzahı: RIGHT JOIN nəticəsində əldə olunan siyahıdan yalnız tələbəsi olmayan (qarşılığı tapılmayan) ünvanları seçib çıxarır 
-(WHERE A.OgrenciNo IS NULL). Sağ cədvəldə olub sol cədvəldə heç bir əlaqəsi olmayan qeydləri tapmaq üçün istifadə olunur.
+--İzahı: RIGHT JOIN nəticəsində əldə olunan siyahıdan yalnız tələbəsi olmayan (qarşılığı tapılmayan) ünvanları seçib çıxarır 
+--(WHERE A.OgrenciNo IS NULL). Sağ cədvəldə olub sol cədvəldə heç bir əlaqəsi olmayan qeydləri tapmaq üçün istifadə olunur.
 -----------------------------------
 select A.OgrenciNo, A.Ad, A.Soyad, sum(B.MiktarTL) as 'Toplam harcama' from Ogrenci A
        right join KantinKayitlari B
@@ -40,6 +40,6 @@ select A.OgrenciNo, A.Ad, A.Soyad, sum(B.MiktarTL) as 'Toplam harcama' from Ogre
        group by A.OgrenciNo, A.Ad, A.Soyad
        order by OgrenciNo
 
-İzahı: KantinKayitlari (sağ cədvəl) üzrə bütün əməliyyatları əsas götürür,tələbə məlumatları ilə birləşdirir. 
-Hər bir tələbənin bufetdəki ümumi xərcini (SUM) hesablayır, qruplaşdırır (GROUP BY) və OgrenciNo-ya görə sıralayır (ORDER BY).
+--İzahı: KantinKayitlari (sağ cədvəl) üzrə bütün əməliyyatları əsas götürür,tələbə məlumatları ilə birləşdirir. 
+--Hər bir tələbənin bufetdəki ümumi xərcini (SUM) hesablayır, qruplaşdırır (GROUP BY) və OgrenciNo-ya görə sıralayır (ORDER BY).
 -----------------------------------
