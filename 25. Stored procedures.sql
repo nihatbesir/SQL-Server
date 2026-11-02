@@ -21,10 +21,18 @@ Kiçik Qeyd (ALTER PROCEDURE haqqında):
 Şərhdə qeyd etdiyiniz kimi, əgər bu prosedur artıq əvvəldən bazada mövcuddursa və siz onun içindəki kodu dəyişmək istəyirsinizsə, 
 CREATE əvəzinə mütləq ALTER PROCEDURE sözündən istifadə etməlisiniz. Əks halda SQL Server "bu adda obyekt mövcuddur" xətası verəcək.
 ----------------
-  Sadə nümunə
+  1.Sadə nümunə
 Create procedure Adresegoreogrencilistesi (@detay varchar(20))
 as
 select * from Ogrenci WHERE OgrenciNo
 in ( select OgrenciNo from OgrenciAdres where AdresDetay like @detay)
 
 execute Adresegoreogrencilistesi '%Paris%'
+
+2.Sadə nümunə
+create procedure sehiregoreogrencilistesi (@il int)
+as
+select * from Ogrenci WHERE OgrenciNo 
+in( select OgrenciNo from OgrenciAdres where sehir= @il )
+
+execute sehiregoreogrencilistesi 35
